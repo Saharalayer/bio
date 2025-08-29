@@ -10,7 +10,8 @@
       margin: 0;
       padding: 0;
       font-family: 'Cairo', 'Almarai', sans-serif;
-      background: linear-gradient(to bottom right, #f0f4f8, #dbe9f4);
+      background: url('https://i.imgur.com/2ZC9ZyT.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #333;
     }
 
@@ -19,21 +20,20 @@
       margin: auto;
       padding: 30px 20px;
       text-align: center;
-      background: white;
+      background: rgba(255, 255, 255, 0.95);
       border-radius: 16px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
       margin-top: 50px;
     }
 
-.profile-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 16px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
+    .profile-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 16px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
 
     .profile-img:hover {
       transform: scale(1.05);
@@ -72,19 +72,32 @@
     .tiktok { background-color: #000; color: #fff; }
     .facebook { background-color: #1877F2; }
     .whatsapp { background-color: #25D366; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+      background-color: #333;
+      font-size: 16px;
+      margin-top: 30px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <img src="beauty_time_logo.png" alt="الصورة الشخصية" class="profile-img" />
-    <h1> Beauty Time </h1>
+    <h1>Beauty Time</h1>
     <p>Always Make Room for a Little Beauty in Your Life</p>
 
     <a href="https://www.snapchat.com/add/BeautyTime.ma" target="_blank" class="social snapchat">سناب شات</a>
     <a href="https://www.instagram.com/BeautyTimema" target="_blank" class="social instagram">انستغرام</a>
     <a href="https://www.tiktok.com/@BeautyTime.ma" target="_blank" class="social tiktok">تيكتوك</a>
     <a href="https://www.facebook.com/BeautyTime.ma" target="_blank" class="social facebook">فيسبوك</a>
-    <a href="https://wa.me/212668-944672" target="_blank" class="social whatsapp">واتساب</a>
+    <a href="https://wa.me/212668944672" target="_blank" class="social whatsapp">واتساب</a>
   </div>
+
+  <footer>
+    لطلب صفحة خاصك بك تواصل معنا
+  </footer>
 </body>
 </html>
