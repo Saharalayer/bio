@@ -10,15 +10,19 @@
       margin: 0;
       padding: 0;
       font-family: 'Cairo', 'Almarai', sans-serif;
-      background-color: #f9f9f9;
-      text-align: center;
+      background: linear-gradient(to bottom right, #f0f4f8, #dbe9f4);
       color: #333;
     }
 
     .container {
       max-width: 600px;
       margin: auto;
-      padding: 20px;
+      padding: 30px 20px;
+      text-align: center;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      margin-top: 50px;
     }
 
     .profile-img {
@@ -28,6 +32,11 @@
       object-fit: cover;
       margin-bottom: 20px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05);
     }
 
     h1 {
@@ -38,15 +47,24 @@
     p {
       font-size: 18px;
       margin-bottom: 30px;
+      color: #555;
     }
 
     .social {
-      padding: 10px;
+      display: block;
+      padding: 12px;
       margin: 10px 0;
       border-radius: 8px;
       color: white;
       font-size: 18px;
       font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+
+    .social:hover {
+      transform: translateY(-3px);
+      opacity: 0.9;
     }
 
     .snapchat { background-color: #FFFC00; color: #000; }
@@ -62,11 +80,11 @@
     <h1>يزن المؤيد كمال</h1>
     <p>رائد أعمال رقمي ومصمم حلول تقنية متقدمة</p>
 
-    <div class="social snapchat">سناب شات</div>
-    <div class="social instagram">انستغرام</div>
-    <div class="social tiktok">تيكتوك</div>
-    <div class="social facebook">فيسبوك</div>
-    <div class="social whatsapp">واتساب</div>
+    <a href="https://www.snapchat.com/add/username" target="_blank" class="social snapchat">سناب شات</a>
+    <a href="https://www.instagram.com/username" target="_blank" class="social instagram">انستغرام</a>
+    <a href="https://www.tiktok.com/@username" target="_blank" class="social tiktok">تيكتوك</a>
+    <a href="https://www.facebook.com/username" target="_blank" class="social facebook">فيسبوك</a>
+    <a href="https://wa.me/your-number" target="_blank" class="social whatsapp">واتساب</a>
   </div>
 </body>
 </html>
